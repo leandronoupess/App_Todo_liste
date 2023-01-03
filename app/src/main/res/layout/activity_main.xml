@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="20dp"
+    android:orientation="vertical"
+    android:background="@drawable/background4"
+    android:paddingLeft="20dp"
+    tools:context=".activity.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="willkommen"
+       android:layout_marginTop="20dp"
+       android:textColor="@color/colorAccent"
+       android:textSize="18sp"/>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Todo List"
+       fontPath="fonts/nunito_extra_bold.ttf"
+       android:textStyle="bold"
+       android:textColor="@color/colorAccent"
+       android:textSize="28sp"
+       tools:ignore="MissingPrefix" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/calendar"
+            android:layout_width="60dp"
+            android:layout_height="41dp"
+            android:layout_gravity="right|center"
+            android:background="@drawable/calendar" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="509dp"
+            android:layout_weight="1">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/taskRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="486dp" />
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/addTask"
+            android:layout_width="349dp"
+            android:layout_height="67dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/circle_background_btn"
+            android:backgroundTint="@color/colorAccent"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="@color/colorPrimary"
+            android:textSize="40dp"></Button>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ToDoListApplication</string>
+    <string name="delete_confirmation">Bestätigung</string>
+    <string name="sureToDelete">Sind Sie sicher, dass Sie die Aufgabe löschen möchten?</string>
+    <string name="yes">ja</string>
+    <string name="no">Nein</string>
+    <string name="confirmation">Die Aufgabe ist erledigt!..</string>
+    <string name="sureToMarkAsComplete">Sind Sie sicher, dass Sie diese Aufgabe als erledigt markieren möchten?.</string>
+    <string name="congrats_you_have_completed_the_task_successfully">Herzlichen Glückwunsch!... Sie haben die Aufgabe erfolgreich abgeschlossen...</string>
+</resources>
